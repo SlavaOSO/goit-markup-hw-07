@@ -509,7 +509,7 @@ img {
   padding-bottom: 94px;
 }
 
-.portfolio-filter-list {
+.portfolio-nav {
   display: flex;
   justify-content: center;
   margin: 0;
@@ -517,11 +517,11 @@ img {
   margin-bottom: 50px;
 }
 
-.portfolio-filter:not(:last-child) {
+.portfolio-nav__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-btn {
+.portfolio-nav__btn {
   font-family: inherit;
   font-weight: var(--text-medium);
   font-size: 16px;
@@ -538,8 +538,8 @@ img {
     background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-btn:hover,
-.filter-btn:focus {
+.portfolio-nav__btn:hover,
+.portfolio-nav__btn:focus {
   color: var(--portfolio-btn-second-color);
   background: var(--portfolio-btn-second-background);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -548,7 +548,7 @@ img {
   border: 0px;
 }
 
-.portfolio-inner-list {
+.portfolio-list__item {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   width: 370px;
@@ -587,16 +587,16 @@ img {
   padding: 0;
 }
 
-.portfolio-inner-list:nth-child(3n) {
+.portfolio-list__item:nth-child(3n) {
   margin: 0;
 }
 
-.portfolio-inner-list:nth-child(-n + 6) {
+.portfolio-list__item:nth-child(-n + 6) {
   margin-bottom: 30px;
 }
 
-.portfolio-inner-list:hover,
-.portfolio-inner-list:focus {
+.portfolio-list__item:hover,
+.portfolio-list__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -625,8 +625,8 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-inner-list:hover .hidden-text,
-.portfolio-inner-list:focus .hidden-text {
+.portfolio-list__item:hover .hidden-text,
+.portfolio-list__item:focus .hidden-text {
   transform: translateY(0%);
 }
 
@@ -736,7 +736,7 @@ img {
   color: #fff;
 }
 
-/* Подписка */ 
+/* Subscribe */ 
 
 .form-subscribe {
   display: flex;
@@ -882,8 +882,6 @@ img {
   cursor: pointer;
 }
 
-/* Form */
-
 .close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -892,6 +890,8 @@ img {
 .backdrop .button:focus .close-icon {
   fill: #2196f3;
 }
+
+/* Form */
 
 .form {
   display: flex;
